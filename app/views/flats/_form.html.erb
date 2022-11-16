@@ -11,6 +11,6 @@
     <%= f.label :number_of_guests %>
     <%= f.number_field :number_of_guests, class:"mb-3" %>
     <% text = @flat.id.nil? ? 'Create' : 'Update' %>
-    <%= f.submit "#{text} flat", class:"w-25"%>
+    <%= f.submit "#{text}", class:"w-25"%>
   </div>
 <% end %>
