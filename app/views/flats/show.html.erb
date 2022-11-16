@@ -1,0 +1,16 @@
+<%= render partial: 'flats/nav' %>
+
+<div id="container" class="m-auto w-75 p-3">
+  <div id="name" class="d-flex flex-column bg-light w-50 border p-2 mb-3">
+    <h2><%= @flat.name %></h2>
+    <p><%= @flat.address %></p>
+  </div>
+  <div id="description" class="d-flex flex-column bg-light w-50 border p-2 mb-3">
+    <h3>A bit more about the flat..</h3>
+    <p><%= @flat.description %></p>
+  </div>
+  <div id="details" class="d-flex flex-column bg-light w-50 border p-2 mb-3">
+    <h3>Details</h3>
+    <div class=""><i class="fa-sharp fa-solid fa-people-simple"></i><%= @flat.number_of_guests %><p class="fa-solid fa-euro-sign"></p><%= @flat.price_per_night %></div>
+  </div>
+</div>
